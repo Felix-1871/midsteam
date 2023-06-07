@@ -72,8 +72,8 @@ import dotenv from 'dotenv'
 
 dotenv.config()
 
-const supabaseUrl = process.env.VUE_APP_SUPABASE_URL
-const supabaseKey = process.env.VUE_APP_SUPABASE_KEY
+const supabaseUrl = "https://ttgymjmisrdktsonzgoa.supabase.co"
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR0Z3ltam1pc3Jka3Rzb256Z29hIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODYwODMxMDAsImV4cCI6MjAwMTY1OTEwMH0.AjFgT0mwVjlJm8H_lcajqZTXU7C72epYg4uLpYenosY"
 const supabase = createClient(supabaseUrl, supabaseKey)
 
 async function login() {
